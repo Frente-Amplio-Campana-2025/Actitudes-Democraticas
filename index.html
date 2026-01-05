@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Actitudes hacia la democracia</title>
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <!-- ===== Bienvenida ===== -->
+  <section id="welcome">
+    <h1>Actitudes hacia la democracia</h1>
+    <p>
+      Este cuestionario es orientativo y busca explorar posturas
+      frente a distintos principios democráticos.
+    </p>
+    <p>
+      No existen respuestas correctas o incorrectas.
+      El objetivo es reflejar posiciones, no evaluarlas.
+    </p>
+
+    <button id="start-btn">Comenzar</button>
+  </section>
+
+  <!-- ===== Test ===== -->
+  <section id="test" style="display: none;">
+    <p>
+      Respondé cada pregunta según tu posición personal.
+    </p>
+
+    <form id="test-form">
+      <div id="questions-container"></div>
+    </form>
+  </section>
+
+  <!-- ===== Resultado ===== -->
+  <section id="result" style="display: none;">
+    <h2>Resultado</h2>
+    <p id="result-text"></p>
+
+    <button id="restart-btn">Reiniciar el test</button>
+  </section>
+
+  <!-- ===== Nota ===== -->
+  <div class="note">
+    <p>
+      Este test es orientativo.  
+      Las respuestas se utilizan únicamente con fines estadísticos agregados.  
+      No se almacenan datos personales.
+    </p>
+  </div>
+
+ 
+  <script src="app.js"></script>
+
+</body>
+</html>
