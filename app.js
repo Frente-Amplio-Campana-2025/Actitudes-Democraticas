@@ -120,10 +120,12 @@ function showResult() {
 
   let interpretation = ""
 
-  if (totalScore <= -1) {
+  if (totalScore <= -4) {
     interpretation = "Baja adhesión a principios democráticos."
-  } else if (totalScore === 0) {
-    interpretation = "Postura ambigua o inconsistente."
+  } else if (totalScore <= 3) {
+    interpretation = "Postura ambigua o moderada."
+  } else if (totalScore <= 7) {
+    interpretation = "Adhesión moderada-alta a principios democráticos."
   } else {
     interpretation = "Alta adhesión a principios democráticos."
   }
